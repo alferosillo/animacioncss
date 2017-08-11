@@ -1,0 +1,62 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+#container{
+background-color:blanchedalmond;
+width: 1000px;
+height: 500px;
+
+}
+#paisaje{
+ width:1000px;
+height: 500px;
+position: relative;
+background-image: url(imagenes/cielo.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+    box-shadow: inset 10px 10px 100px black;
+    
+} 
+
+#barco{
+width: 200px;
+height: 300px;
+position: absolute;
+top:100px; 
+z-index: 1;
+background-image: url(imagenes/barco-pirata2.png);
+background-size: contain;
+background-repeat: no-repeat;
+    @keyframes movizder{
+        from{
+        top:15px;
+        left: 15px;
+        }
+        to{
+        top:15px;
+        left: 15px;
+        }
+    animation-name:movizder;
+    }
+}
+#mar{
+height: 300px;
+width: 1000px;
+position: absolute;
+top:50%;
+background-image: url(mar.jpg);
+box-shadow: inset 10px 10px 100px black;
+}
+#peces{
+width: 100px;
+height: 50px;
+position: absolute;
+background-image: url(imagenes/ballena.png);
+background-size: cover;
+top:100px;
+left: 100px;
+
+
+}
