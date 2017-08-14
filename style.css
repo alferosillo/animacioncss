@@ -7,16 +7,18 @@ padding: 0;
 background-color:blanchedalmond;
 width: 1000px;
 height: 500px;
+    margin: 0 auto;
 
 }
 #paisaje{
  width:1000px;
 height: 500px;
 position: relative;
-background-image: url(imagenes/cielo.jpg);
+background-image: url(imagenes/Atardecer.jpg);
 background-size: cover;
 background-repeat: no-repeat;
     box-shadow: inset 10px 10px 100px black;
+overflow: hidden;
     
 } 
 
@@ -25,22 +27,25 @@ width: 200px;
 height: 300px;
 position: absolute;
 top:100px; 
+left: 0%;
 z-index: 1;
-background-image: url(imagenes/barco-pirata2.png);
+background-image:url(imagenes/barco-pirata2.png);
 background-size: contain;
 background-repeat: no-repeat;
-    @keyframes movizder{
-        from{
-        top:15px;
-        left: 15px;
-        }
-        to{
-        top:15px;
-        left: 15px;
-        }
-    animation-name:movizder;
-    }
+    
+  
+    animation-name:navegar;
+    animation-duration:20s;
+ 
 }
+  @keyframes navegar{
+      
+        100%{
+       
+        left:130%;
+        }
+}
+/*      */
 #mar{
 height: 300px;
 width: 1000px;
@@ -53,10 +58,16 @@ box-shadow: inset 10px 10px 100px black;
 width: 100px;
 height: 50px;
 position: absolute;
-background-image: url(imagenes/ballena.png);
+background-image:url(imagenes/peces.png);
 background-size: cover;
 top:100px;
 left: 100px;
-
+ animation-name:nadar;
+    animation-duration:18s;
 
 }
+  @keyframes nadar{
+      
+        100%{
+       
+        left:130%;
